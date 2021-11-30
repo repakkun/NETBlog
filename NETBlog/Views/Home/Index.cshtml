@@ -1,0 +1,32 @@
+﻿
+@{
+    //ViewData["Title"] = "Список смартфонов";
+    Layout = null;
+}
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Блог</title>
+</head>
+<body>
+<h3>Пользователи</h3>
+<table>
+    <tr>
+        <td>Айди</td>
+        <td>Имя пользователя</td>
+        <td>Дата регистрации</td>
+        <td></td>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.UserName</td>
+            <td>@user.JoinDate</td>
+            <td><a href="~/Home/Register">Зарегистрироваться в блоге</a></td>
+        </tr>
+    }
+</table>
+</body>
+</html>
