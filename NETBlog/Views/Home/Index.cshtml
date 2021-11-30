@@ -1,32 +1,8 @@
-﻿
-@{
-    //ViewData["Title"] = "Список смартфонов";
-    Layout = null;
+﻿@{
+    ViewData["Title"] = "Home Page";
 }
-<!DOCTYPE html>
- 
-<html>
-<head>
-    <title>Блог</title>
-</head>
-<body>
-<h3>Пользователи</h3>
-<table>
-    <tr>
-        <td>Айди</td>
-        <td>Имя пользователя</td>
-        <td>Дата регистрации</td>
-        <td></td>
-    </tr>
-    @foreach (var user in Model)
-    {
-        <tr>
-            <td>@user.Id</td>
-            <td>@user.UserName</td>
-            <td>@user.JoinDate</td>
-            <td><a href="~/Home/Register">Зарегистрироваться в блоге</a></td>
-        </tr>
-    }
-</table>
-</body>
-</html>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
