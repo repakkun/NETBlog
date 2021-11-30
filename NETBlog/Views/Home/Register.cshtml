@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+<div>
+    <h3>Форма регистрации</h3>
+    <p>Введите имя пользователя</p>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.JoinDate" name="JoinDate" />
+        <table>
+            <tr>
+                <td>Имя пользователя:</td>
+                <td><input type="text" name="UserName"/> </td>
+            </tr>
+            <tr><td><input type="submit" value="Зарегистрироваться"/> </td><td></td></tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
